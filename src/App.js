@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 import Page from './components/Page.js'
 import './App.css'
+import 'typeface-roboto'
 
 import Home from './components/pages/Home.js'
 import Works from './components/pages/Works.js'
@@ -28,22 +29,26 @@ class App extends Component {
         {
             path: '/',
             name: 'Home',
-            component: Home
+            component: Home,
+            icon: 'alternate_email'
         },
         {
             path: '/works',
             name: 'Works',
-            component: Works
+            component: Works,
+            icon: 'business_center'
         },
         {
             path: '/skills',
             name: 'Skills',
-            component: Skills
+            component: Skills,
+            icon: 'school'
         },
         {
             path: '/contact',
             name: 'Contact',
-            component: Contact
+            component: Contact,
+            icon: 'alternate_email'
         }
       ]
     };

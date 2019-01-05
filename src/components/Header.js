@@ -1,8 +1,13 @@
 import React from 'react';
 import { NavLink as Link } from 'react-router-dom';
+import Bubble from './Bubble.js'
 
 const Header = (props) => {
-    const links = props.pages.map(page => <Link to={page.path} key={page.name}>{page.name}</Link>);
+    const links = props.pages.map(page => 
+        <Link to={page.path} key={page.name}>
+            <Bubble icon={page.icon} text={page.name} />
+        </Link>
+    );
     return (
         <header>
             <nav>{links}</nav>
