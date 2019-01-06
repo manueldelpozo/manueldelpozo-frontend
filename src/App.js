@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 import Page from './components/Page.js'
-import './App.css'
+import './App.scss'
 import 'typeface-roboto'
 
 import Home from './components/pages/Home.js'

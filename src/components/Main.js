@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom'
 
 const Main = (props) => {
     const routes = props.pages.map(page => <Route path={page.path} key={page.name} component={page.component} />);
+    console.log(routes)
     return (
         <main>
             <Switch>
