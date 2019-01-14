@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Route, Switch, NavLink as Link, withRouter } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 import Header from './Header.js'
 import Main from './Main.js'
 

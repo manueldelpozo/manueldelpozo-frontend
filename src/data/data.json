@@ -7,13 +7,6 @@
             },
             "body": "This is Home"
         },
-        "/contat": {
-            "header": {
-                "title": "Welcome to my contact" ,
-                "subtitle": "— Ideate romantically, create pragmatically, design everything you do. —"
-            },
-            "body": "This is Contact"
-        },
         "/works": {
             "header": {
                 "title": "Find out all the information about my work experience in web development" ,
@@ -27,6 +20,13 @@
                 "subtitle": ""
             },
             "body": "This is My skills"
+        },
+        "/contact": {
+            "header": {
+                "title": "Welcome to my contact" ,
+                "subtitle": "— Ideate romantically, create pragmatically, design everything you do. —"
+            },
+            "body": "This is Contact"
         }
     }
 }
