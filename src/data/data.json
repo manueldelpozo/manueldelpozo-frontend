@@ -1,0 +1,32 @@
+{
+    "en": {
+        "/": {
+            "header": {
+                "title": "Welcome to my web portfolio",
+                "subtitle": "— Ideate romantically, create pragmatically, design everything you do. —"
+            },
+            "body": "This is Home"
+        },
+        "/contat": {
+            "header": {
+                "title": "Welcome to my contact" ,
+                "subtitle": "— Ideate romantically, create pragmatically, design everything you do. —"
+            },
+            "body": "This is Contact"
+        },
+        "/works": {
+            "header": {
+                "title": "Find out all the information about my work experience in web development" ,
+                "subtitle": "— Ideate romantically, create pragmatically, design everything you do. —"
+            },
+            "body": "This is My work experience"
+        },
+        "/skills": {
+            "header": {
+                "title": "Have a look and discover the information about my personal skills, my academic experience and my technical abilities" ,
+                "subtitle": ""
+            },
+            "body": "This is My skills"
+        }
+    }
+}
