@@ -13,61 +13,75 @@ import data from './data/data.json'
 class App extends Component {
 
   constructor(props) {
-    super(props);
-    this.handlerContent = this.handlerContent.bind(this);
-    
+    super(props)
+    this.handlerContent = this.handlerContent.bind(this)
+    this.updateLinks = this.updateLinks.bind(this)
+    this.pages = [
+      {
+          path: '/',
+          name: 'Home',
+          component: Home,
+          icon: 'alternate_email'
+      },
+      {
+          path: '/works',
+          name: 'Works',
+          component: Works,
+          icon: 'business_center'
+      },
+      {
+          path: '/skills',
+          name: 'Skills',
+          component: Skills,
+          icon: 'school'
+      },
+      {
+          path: '/contact',
+          name: 'Contact',
+          component: Contact,
+          icon: 'alternate_email'
+      }
+    ]
+    this.initialPath = '/'
+
     this.state = {
-      currentPage: '/', 
-      pages: [
-        {
-            path: '/',
-            name: 'Home',
-            component: Home,
-            icon: 'alternate_email'
-        },
-        {
-            path: '/works',
-            name: 'Works',
-            component: Works,
-            icon: 'business_center'
-        },
-        {
-            path: '/skills',
-            name: 'Skills',
-            component: Skills,
-            icon: 'school'
-        },
-        {
-            path: '/contact',
-            name: 'Contact',
-            component: Contact,
-            icon: 'alternate_email'
-        }
-      ]
-    };
+      currentPath: this.initialPath, 
+      pages: this.pages
+    }
   }
 
   componentWillMount() {
     this.setState({
       data
-    });
+    })
   }
 
-  handlerContent(pathname) {
+  handlerContent(currentPath) {
+    
     this.setState({
-      currentPage: pathname
-    });
+      currentPath
+    })
+    this.updateLinks(currentPath)
+  }
+
+  updateLinks(currentPath) {
+    const pages = this.pages.filter(page => page.path !== currentPath)
+    this.setState({
+      pages 
+    })
   }
 
   render() {
-    console.log(this.state.data)
+    //console.log(this.state.data)
     return (
       <div className="App">
         <Router>
-          <Page content={this.state.data.en[this.state.currentPage]} pages={this.state.pages} setContent={this.handlerContent} />
+          <Page content={this.state.data.en[this.state.currentPath]} 
+                pages={this.state.pages} 
+                setContent={this.handlerContent} />
         </Router>
       </div>
-    );
+    )
   }
 }
 
