@@ -1,8 +1,8 @@
 import React from 'react'
 import Grid from './../Grid.js'
 
-const Works = (props) => (
+const Training = (props) => (
     <Grid list={props.body} />
 )
 
-export default Works
+export default Training

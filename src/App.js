@@ -7,7 +7,9 @@ import 'typeface-roboto'
 import Home from './components/pages/Home.js'
 import Works from './components/pages/Works.js'
 import Skills from './components/pages/Skills.js'
+import Training from './components/pages/Training.js'
 import Contact from './components/pages/Contact.js'
+
 import data from './data/data.json'
 
 class App extends Component {
@@ -21,23 +23,29 @@ class App extends Component {
           path: '/',
           name: 'Home',
           component: Home,
-          icon: 'alternate_email'
+          icon: 'home'
       },
       {
           path: '/works',
-          name: 'Works',
+          name: 'Work Experiences',
           component: Works,
           icon: 'business_center'
       },
       {
           path: '/skills',
-          name: 'Skills',
+          name: 'My Skills',
           component: Skills,
-          icon: 'school'
+          icon: 'how_to_reg'
       },
       {
+        path: '/training',
+        name: 'My Training',
+        component: Training,
+        icon: 'fitness_center'
+    },
+      {
           path: '/contact',
-          name: 'Contact',
+          name: 'Contact Me',
           component: Contact,
           icon: 'alternate_email'
       }
