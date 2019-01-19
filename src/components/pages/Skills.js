@@ -1,8 +1,8 @@
 import React from 'react'
-import Grid from './../Grid.js'
+import ListGrid from './../ListGrid.js'
 
 const Skills = (props) => (
-    <Grid list={props.body} />
+    <ListGrid list={props.body} />
 )
 
 export default Skills

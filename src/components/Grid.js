@@ -43,7 +43,7 @@ const Grid = (props) => {
                         <img src={require(`./../assets/${item.icon}`)} alt={item.title} />
                         <GridListTileBar
                             title={item.title}
-                            subtitle={<span>by: {item.text}</span>}
+                            subtitle={<span>{item.text}</span>}
                             key={item.icon}
                             actionIcon={
                                 <IconButton className={classes.icon}>

@@ -20,13 +20,18 @@ class Page extends Component {
         this.props.history.unlisten()
     }
 
+    componentDidMount() {
+        this.props.setContent(this.props.location.pathname)
+    }
+
     render() {
+        const content = this.props.content[this.props.location.pathname]
         return (
             <div>
-                <Header title={this.props.content.header.title} 
-                        subtitle={this.props.content.header.subtitle} 
+                <Header title={content.header.title} 
+                        subtitle={content.header.subtitle} 
                         pages={this.props.pages} />
-                <Main   body={this.props.content.body} 
+                <Main   body={content.body} 
                         pages={this.pagesBeforeMount} />
             </div>
         )

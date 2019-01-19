@@ -26,7 +26,7 @@ const BubbleButton = withStyles({
 const Bubble = (props) => {
     return (
         <BubbleButton>
-            <Icon>{props.icon}</Icon>
+            <Icon fontSize="large">{props.icon}</Icon>
             <h2>{props.text}</h2>
         </BubbleButton>
     )

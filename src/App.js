@@ -54,18 +54,13 @@ class App extends Component {
 
     this.state = {
       currentPath: this.initialPath, 
-      pages: this.pages
+      pages: this.pages,
+      lang: 'en',
+      data
     }
   }
 
-  componentWillMount() {
-    this.setState({
-      data
-    })
-  }
-
   handlerContent(currentPath) {
-    
     this.setState({
       currentPath
     })
@@ -80,11 +75,10 @@ class App extends Component {
   }
 
   render() {
-    //console.log(this.state.data)
     return (
       <div className="App">
         <Router>
-          <Page content={this.state.data.en[this.state.currentPath]} 
+          <Page content={this.state.data[this.state.lang]} 
                 pages={this.state.pages} 
                 setContent={this.handlerContent} />
         </Router>
