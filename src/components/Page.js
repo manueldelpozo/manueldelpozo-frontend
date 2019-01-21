@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import Header from './Header.js'
 import Main from './Main.js'
+import Grid from '@material-ui/core/Grid'
 
 class Page extends Component {
     constructor(props) {
@@ -28,11 +29,15 @@ class Page extends Component {
         const content = this.props.content[this.props.location.pathname]
         return (
             <div>
-                <Header title={content.header.title} 
-                        subtitle={content.header.subtitle} 
-                        pages={this.props.pages} />
-                <Main   body={content.body} 
-                        pages={this.pagesBeforeMount} />
+                <Grid container spacing={24} justify="center" alignItems="center">
+                    <Grid item xs={10} sm={6}>
+                        <Header title={content.header.title} 
+                                subtitle={content.header.subtitle}
+                                pages={this.props.pages} />
+                        <Main   body={content.body} 
+                                pages={this.pagesBeforeMount} />
+                    </Grid>
+                </Grid>
             </div>
         )
     }
