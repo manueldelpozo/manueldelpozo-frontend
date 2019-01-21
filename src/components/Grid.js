@@ -1,5 +1,5 @@
 import React from 'react'
-//import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 
 import GridList from '@material-ui/core/GridList';
@@ -58,8 +58,8 @@ const Grid = (props) => {
     );
 }
 
-// Grid.propTypes = {
-//     classes: PropTypes.object.isRequired,
-//   };
+Grid.propTypes = {
+    classes: PropTypes.object.isRequired,
+};
 
 export default withStyles(styles)(Grid)

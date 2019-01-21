@@ -23,31 +23,36 @@ class App extends Component {
           path: '/',
           name: 'Home',
           component: Home,
-          icon: 'home'
+          icon: 'home',
+          themeColor: 'primary'
       },
       {
           path: '/works',
           name: 'Work Experiences',
           component: Works,
-          icon: 'business_center'
+          icon: 'business_center',
+          themeColor: 'secondary'
       },
       {
           path: '/skills',
           name: 'My Skills',
           component: Skills,
-          icon: 'how_to_reg'
+          icon: 'how_to_reg',
+          themeColor: 'primary'
       },
       {
         path: '/training',
         name: 'My Training',
         component: Training,
-        icon: 'fitness_center'
+        icon: 'fitness_center',
+        themeColor: 'secondary'
     },
       {
           path: '/contact',
           name: 'Contact Me',
           component: Contact,
-          icon: 'alternate_email'
+          icon: 'alternate_email',
+          themeColor: 'primary'
       }
     ]
     this.initialPath = '/'
@@ -69,9 +74,11 @@ class App extends Component {
 
   updateLinks(currentPath) {
     const pages = this.pages.filter(page => page.path !== currentPath)
-    this.setState({
-      pages 
-    })
+    setTimeout(() => {
+      this.setState({
+        pages 
+      })
+    }, 1000);
   }
 
   render() {

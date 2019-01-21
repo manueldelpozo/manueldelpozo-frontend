@@ -7,7 +7,7 @@ const Header = (props) => {
     const links = props.pages.map(page => 
         <Grid item xs={6} md={3} key={page.name}>
             <Link to={page.path}>
-                <Bubble icon={page.icon} text={page.name} />
+                <Bubble icon={page.icon} text={page.name} themeColor={page.themeColor} />
             </Link>
         </Grid>
     );
