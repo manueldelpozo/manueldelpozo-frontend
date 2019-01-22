@@ -12,6 +12,40 @@ import Contact from './components/pages/Contact.js'
 
 import data from './data/data.json'
 
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import teal from '@material-ui/core/colors/teal';
+import blueGrey from '@material-ui/core/colors/blueGrey';
+import red from '@material-ui/core/colors/red';
+
+const theme = createMuiTheme({
+  palette: {
+    primary: { 
+      main: teal[400]
+    },
+    secondary: { 
+      main: blueGrey[900]
+    },
+    error: red,
+    contrastThreshold: 3,
+    tonalOffset: 0.2,
+  },
+  typography: {
+    // Use the system font instead of the default Roboto font.
+    fontFamily: [
+      '-apple-system',
+      'BlinkMacSystemFont',
+      '"Segoe UI"',
+      'Roboto',
+      '"Helvetica Neue"',
+      'Arial',
+      'sans-serif',
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(','),
+  }
+});
+
 class App extends Component {
 
   constructor(props) {
@@ -20,25 +54,25 @@ class App extends Component {
     this.updateLinks = this.updateLinks.bind(this)
     this.pages = [
       {
-          path: '/',
-          name: 'Home',
-          component: Home,
-          icon: 'home',
-          themeColor: 'primary'
+        path: '/',
+        name: 'Home',
+        component: Home,
+        icon: 'home',
+        themeColor: 'primary'
       },
       {
-          path: '/works',
-          name: 'Work Experiences',
-          component: Works,
-          icon: 'business_center',
-          themeColor: 'secondary'
+        path: '/works',
+        name: 'Work Experiences',
+        component: Works,
+        icon: 'business_center',
+        themeColor: 'secondary'
       },
       {
-          path: '/skills',
-          name: 'My Skills',
-          component: Skills,
-          icon: 'how_to_reg',
-          themeColor: 'primary'
+        path: '/skills',
+        name: 'My Skills',
+        component: Skills,
+        icon: 'how_to_reg',
+        themeColor: 'primary'
       },
       {
         path: '/training',
@@ -46,13 +80,13 @@ class App extends Component {
         component: Training,
         icon: 'fitness_center',
         themeColor: 'secondary'
-    },
+      },
       {
-          path: '/contact',
-          name: 'Contact Me',
-          component: Contact,
-          icon: 'alternate_email',
-          themeColor: 'primary'
+        path: '/contact',
+        name: 'Contact Me',
+        component: Contact,
+        icon: 'alternate_email',
+        themeColor: 'primary'
       }
     ]
     this.initialPath = '/'
@@ -83,13 +117,15 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <Router>
-          <Page content={this.state.data[this.state.lang]} 
-                pages={this.state.pages} 
-                setContent={this.handlerContent} />
-        </Router>
-      </div>
+      <MuiThemeProvider theme={theme}>
+        <div className="App">
+          <Router>
+            <Page content={this.state.data[this.state.lang]} 
+                  pages={this.state.pages} 
+                  setContent={this.handlerContent} />
+          </Router>
+        </div>
+      </MuiThemeProvider>
     )
   }
 }
