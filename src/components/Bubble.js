@@ -7,24 +7,28 @@ import Icon from '@material-ui/core/Icon'
 
 const styles = theme => ({
     root: {
-        //backgroundColor: theme.palette.background.paper,
         position: 'relative',
         width: 130,
         minHeight: 130, 
-        textDecoration: 'none',
-        display: 'flex',
-        flexDirection: 'column',
         transition: '.5s'
     },
     elevation0: {
-        boxShadow: theme.shadows[0]
+        boxShadow: theme.shadows[0],
+        width: 120,
+        minHeight: 120
     },
     elevation10: {
-        boxShadow: theme.shadows[10]
+        boxShadow: theme.shadows[10],
+        width: 130,
+        minHeight: 130
     },
     expanded: {
         width: '100vw', 
         minHeight: '100vw',
+    },
+    label: {
+        display: 'flex',
+        flexDirection: 'column',
     }
 })
 
@@ -53,14 +57,6 @@ class Bubble extends React.Component {
         this.setState({ isExpanded: true })
     }
 
-    // handleChange = (event, value) => {
-    //     this.setState({ value });
-    // };
-
-    // handleChangeIndex = index => {
-    //     this.setState({ value: index });
-    // };
-
     render() {
         const { classes, theme, text, icon, themeColor } = this.props
         const transitionDuration = {
@@ -81,12 +77,17 @@ class Bubble extends React.Component {
                         ${classes.root} 
                         ${this.state.isElevated ? classes.elevation10 : classes.elevation0}
                         ${this.state.isExpanded ? classes.expanded : null}
+                        label
                     `} 
+                    classes={{
+                        root: classes.root, // class name, e.g. `classes-nesting-root-x`
+                        label: classes.label, // class name, e.g. `classes-nesting-label-x`
+                    }}
                     color={themeColor}
                     onMouseEnter={this.getDownElevation}
                     onMouseLeave={this.getUpElevation}>
                     <Icon fontSize="large">{icon}</Icon>
-                    <h2>{text}</h2>
+                    <span>{text}</span>
                 </Fab>
             </Zoom>
         )
