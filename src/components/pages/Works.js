@@ -1,8 +1,8 @@
 import React from 'react'
 import Grid from './../Grid.js'
 
-const Works = (props) => (
-    <Grid list={props.body} />
+const Works = ({ body }) => (
+    <Grid list={body} />
 )
 
 export default Works

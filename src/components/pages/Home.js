@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Home = (props) => (
-    <p>{props.body}</p>
+const Home = ({ body }) => (
+    <p>{body}</p>
 )
 
 export default Home

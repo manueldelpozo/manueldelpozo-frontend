@@ -1,8 +1,8 @@
 import React from 'react'
 import Grid from './../Grid.js'
 
-const Contact = (props) => (
-    <Grid list={props.body} />
+const Contact = ({ body }) => (
+    <Grid list={body} />
 )
 
 export default Contact
