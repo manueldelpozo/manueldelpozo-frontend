@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react'
+import PropTypes from 'prop-types'
 import { BrowserRouter as Router } from 'react-router-dom'
 import Page from './components/Page.js'
 import './App.scss'
@@ -108,11 +109,11 @@ class App extends PureComponent {
 
   updateLinks(currentPath) {
     const pages = this.pages.filter(page => page.path !== currentPath)
-    setTimeout(() => {
+    //setTimeout(() => {
       this.setState({
         pages 
       })
-    }, 1000);
+    //}, 1000);
   }
 
   render() {
@@ -128,6 +129,13 @@ class App extends PureComponent {
       </MuiThemeProvider>
     )
   }
+}
+
+App.propTypes = {
+  pages: PropTypes.arrayOf(PropTypes.object),
+  initialPath: PropTypes.string,
+  handlerContent: PropTypes.func,
+  updateLinks: PropTypes.func
 }
 
 export default App

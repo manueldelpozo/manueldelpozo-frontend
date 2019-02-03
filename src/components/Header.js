@@ -1,5 +1,6 @@
-import React from 'react';
-import { NavLink as Link } from 'react-router-dom';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { NavLink as Link } from 'react-router-dom'
 import Bubble from './Bubble.js'
 import Grid from '@material-ui/core/Grid'
 
@@ -10,7 +11,7 @@ const Header = (props) => {
                 <Bubble icon={page.icon} text={page.name} themeColor={page.themeColor} />
             </Link>
         </Grid>
-    );
+    )
     return (
         <header className="App-header">
             <nav>
@@ -29,4 +30,16 @@ const Header = (props) => {
     )
 }
 
-export default Header;
+Header.propTypes = {
+    pages: PropTypes.arrayOf(PropTypes.shape({
+        path: PropTypes.string.isRequired,
+        name: PropTypes.string.isRequired,
+        component: PropTypes.func.isRequired,
+        icon: PropTypes.string.isRequired,
+        themeColor: PropTypes.string
+    })),
+    title: PropTypes.string,
+    subtitle: PropTypes.string
+}
+
+export default Header

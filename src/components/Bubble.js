@@ -37,6 +37,7 @@ class Bubble extends PureComponent {
         super(props)
         this.getDownElevation = this.getDownElevation.bind(this)
         this.getUpElevation = this.getUpElevation.bind(this)
+        this.expand = this.expand.bind(this)
         this.initialElevation = 10
         this.state = {
             isElevated: true,
@@ -52,7 +53,9 @@ class Bubble extends PureComponent {
         this.setState({ isElevated: true })
     }
 
-    expand() {
+    expand(event) {
+        console.log(event)
+        //event.stopPropagation();
         //this.setState({ isExpanded: true })
     }
 
@@ -102,6 +105,9 @@ class Bubble extends PureComponent {
 Bubble.propTypes = {
     classes: PropTypes.object.isRequired,
     theme: PropTypes.object.isRequired,
+    text: PropTypes.string.isRequired,
+    icon: PropTypes.string.isRequired,
+    themeColor: PropTypes.string
 };
 
 export default withStyles(styles, { withTheme: true })(Bubble)

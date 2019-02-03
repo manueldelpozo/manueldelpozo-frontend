@@ -1,4 +1,5 @@
 import React, { PureComponent, Fragment } from 'react'
+import PropTypes from 'prop-types'
 import { withRouter } from 'react-router-dom'
 import Header from './Header.js'
 import Main from './Main.js'
@@ -39,6 +40,12 @@ class Page extends PureComponent {
             </Fragment>
         )
     }
+}
+
+Page.propTypes = {
+    pages: PropTypes.arrayOf(PropTypes.object),
+    pagesBeforeMount: PropTypes.arrayOf(PropTypes.object),
+    setContent: PropTypes.func
 }
 
 export default withRouter(Page)

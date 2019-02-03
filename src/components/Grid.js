@@ -37,7 +37,7 @@ const Grid = (props) => {
                     <GridListTile 
                         key={item.icon} 
                         component={'a'} 
-                        href={item.link || ''}
+                        href={item.link}
                         target="_blank"
                         rel="noopener noreferrer">
                         <img src={require(`./../assets/${item.icon}`)} alt={item.title} />
@@ -60,6 +60,12 @@ const Grid = (props) => {
 
 Grid.propTypes = {
     classes: PropTypes.object.isRequired,
-};
+    list: PropTypes.arrayOf(PropTypes.shape({
+        icon: PropTypes.string.isRequired,
+        title: PropTypes.string.isRequired,
+        text: PropTypes.string.isRequired, 
+        link: PropTypes.string
+    }))
+}
 
 export default withStyles(styles)(Grid)
