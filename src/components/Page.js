@@ -8,9 +8,7 @@ class Page extends PureComponent {
     constructor(props) {
         super(props)
         this.pagesBeforeMount = props.pages
-    }
 
-    componentWillMount() {
         this.props.history.listen((location, action) => {
             //console.log(action, location.pathname, location)
             this.props.setContent(location.pathname)
