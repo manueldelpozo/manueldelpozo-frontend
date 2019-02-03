@@ -1,10 +1,10 @@
-import React, { Component, Fragment } from 'react'
+import React, { PureComponent, Fragment } from 'react'
 import { withRouter } from 'react-router-dom'
 import Header from './Header.js'
 import Main from './Main.js'
 import Grid from '@material-ui/core/Grid'
 
-class Page extends Component {
+class Page extends PureComponent {
     constructor(props) {
         super(props)
         this.pagesBeforeMount = props.pages

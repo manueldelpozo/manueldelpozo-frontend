@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { withStyles } from '@material-ui/core/styles'
 import Zoom from '@material-ui/core/Zoom'
@@ -32,7 +32,7 @@ const styles = theme => ({
     }
 })
 
-class Bubble extends React.Component {
+class Bubble extends PureComponent {
     constructor(props) {
         super(props)
         this.getDownElevation = this.getDownElevation.bind(this)

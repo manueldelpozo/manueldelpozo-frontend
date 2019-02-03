@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 import Page from './components/Page.js'
 import './App.scss'
@@ -46,7 +46,7 @@ const theme = createMuiTheme({
   }
 });
 
-class App extends Component {
+class App extends PureComponent {
 
   constructor(props) {
     super(props)
