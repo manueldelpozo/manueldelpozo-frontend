@@ -52,6 +52,10 @@ class Bubble extends React.Component {
         this.setState({ isElevated: true })
     }
 
+    expand() {
+        //this.setState({ isExpanded: true })
+    }
+
     componentWillUnmount() {
         console.log('byyee')
         this.setState({ isExpanded: true })
@@ -77,15 +81,16 @@ class Bubble extends React.Component {
                         ${classes.root} 
                         ${this.state.isElevated ? classes.elevation10 : classes.elevation0}
                         ${this.state.isExpanded ? classes.expanded : null}
-                        label
+                        App-header__bubble
                     `} 
                     classes={{
                         root: classes.root, // class name, e.g. `classes-nesting-root-x`
                         label: classes.label, // class name, e.g. `classes-nesting-label-x`
                     }}
                     color={themeColor}
-                    onMouseEnter={this.getDownElevation}
-                    onMouseLeave={this.getUpElevation}>
+                    onMouseOver={this.getDownElevation}
+                    onMouseOut={this.getUpElevation}
+                    onClick={this.expand}>
                     <Icon fontSize="large">{icon}</Icon>
                     <span>{text}</span>
                 </Fab>

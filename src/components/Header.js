@@ -12,7 +12,7 @@ const Header = (props) => {
         </Grid>
     );
     return (
-        <header>
+        <header className="App-header">
             <nav>
                 <Grid 
                     container 
