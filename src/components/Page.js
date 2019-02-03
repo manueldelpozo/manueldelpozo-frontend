@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import { withRouter } from 'react-router-dom'
 import Header from './Header.js'
 import Main from './Main.js'
@@ -28,7 +28,7 @@ class Page extends Component {
     render() {
         const content = this.props.content[this.props.location.pathname]
         return (
-            <div>
+            <Fragment>
                 <Grid container spacing={24} justify="center" alignItems="center">
                     <Grid item xs={10} sm={6}>
                         <Header title={content.header.title} 
@@ -38,7 +38,7 @@ class Page extends Component {
                                 pages={this.pagesBeforeMount} />
                     </Grid>
                 </Grid>
-            </div>
+            </Fragment>
         )
     }
 }
