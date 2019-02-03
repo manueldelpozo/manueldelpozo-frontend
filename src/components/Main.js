@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import { Route, Switch } from 'react-router-dom'
+import Scene from './Scene.js'
 
 const Main = (props) => {
     const routes = props.pages.map(page => 
         <Route exact path={page.path} key={page.name} render={ () => (
-            <page.component body={props.body} />
+            <Fragment>
+                <page.component body={props.body} />
+                <Scene color={page.themeColor} zoomIn={true} />
+            </Fragment>
         )} />
     )
     

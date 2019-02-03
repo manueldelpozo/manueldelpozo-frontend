@@ -22,10 +22,6 @@ const styles = theme => ({
         width: 130,
         minHeight: 130
     },
-    expanded: {
-        width: '100vw', 
-        minHeight: '100vw',
-    },
     label: {
         display: 'flex',
         flexDirection: 'column',
@@ -37,11 +33,9 @@ class Bubble extends PureComponent {
         super(props)
         this.getDownElevation = this.getDownElevation.bind(this)
         this.getUpElevation = this.getUpElevation.bind(this)
-        this.expand = this.expand.bind(this)
         this.initialElevation = 10
         this.state = {
-            isElevated: true,
-            isExpanded : false
+            isElevated: true
         }
     }
 
@@ -51,17 +45,6 @@ class Bubble extends PureComponent {
 
     getUpElevation() {
         this.setState({ isElevated: true })
-    }
-
-    expand(event) {
-        console.log(event)
-        //event.stopPropagation();
-        //this.setState({ isExpanded: true })
-    }
-
-    componentWillUnmount() {
-        console.log('byyee')
-        this.setState({ isExpanded: true })
     }
 
     render() {
@@ -92,8 +75,7 @@ class Bubble extends PureComponent {
                     }}
                     color={themeColor}
                     onMouseOver={this.getDownElevation}
-                    onMouseOut={this.getUpElevation}
-                    onClick={this.expand}>
+                    onMouseOut={this.getUpElevation}>
                     <Icon fontSize="large">{icon}</Icon>
                     <span>{text}</span>
                 </Fab>
