@@ -1,10 +1,12 @@
 {
   "name": "manueldelpozo-r",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "private": true,
+  "homepage": "https://manueldelpozo.github.io/manueldelpozo-frontend",
   "dependencies": {
     "@material-ui/core": "^3.8.1",
     "@material-ui/icons": "^3.0.1",
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
@@ -15,6 +17,8 @@
     "typeface-roboto": "0.0.54"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
