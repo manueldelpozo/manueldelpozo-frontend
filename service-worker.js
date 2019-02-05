@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/manueldelpozo-frontend/precache-manifest.ce2279af70d27be813935219056dd122.js"
+  "/manueldelpozo-frontend/precache-manifest.86e9eb68982b85c45310ea6fb56fce9c.js"
 );
 
 workbox.clientsClaim();
