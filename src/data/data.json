@@ -16,43 +16,37 @@
                         {
                             "icon": "icons/works-ing.png",
                             "title": "FRONT-END DEVELOPER: ING BANK (COGNIZANT)__BRUSSELS (BELGIUM)__2017/18 ",
-                            "text": "// DEVELOPMENT AND DELIVERY OF POLYMER PWA PROGRESSIVE WEB APPs WITHIN THE END-TO-END PROCESS // REUSE OF THE GUIDE UI COMPONENTS // CONTINUOUS INTEGRATION WITH PICARD - ARTIFACTORY - NOLIO // ING AGILE WAY OF WORKING // OMNICHANNEL SQUAD AND TRIBES FOR THE UNITE BE+NL PLATFORM //",
+                            "text": "DEVELOPMENT AND DELIVERY OF POLYMER PWA PROGRESSIVE WEB APPs WITHIN THE END-TO-END PROCESS // REUSE OF THE GUIDE UI COMPONENTS // CONTINUOUS INTEGRATION WITH PICARD - ARTIFACTORY - NOLIO // ING AGILE WAY OF WORKING // OMNICHANNEL SQUAD AND TRIBES FOR THE UNITE BE+NL PLATFORM //",
                             "link": "https://www.ing.be/"
                         },
                         {
                             "icon": "icons/works-bankia.png",
                             "title": "FRONT-END DEVELOPER: BANKIA (GFT GROUP)__MADRID (SPAIN)__2017",
-                            "text": "// DEVELOPMENT AND MAINTENANCE OF ONLINE BUSINESS BANKING ENTERPRISE PLATFORM // RESTFUL WEB SERVICE WITH ANGULARJS // GRUNT AND GULP // GIT AND STASH // CONTINUOUS INTEGRATION WITH BAMBOO // SCRUM TEAM MEMBER //",
+                            "text": "DEVELOPMENT AND MAINTENANCE OF ONLINE BUSINESS BANKING ENTERPRISE PLATFORM // RESTFUL WEB SERVICE WITH ANGULARJS // GRUNT AND GULP // GIT AND STASH // CONTINUOUS INTEGRATION WITH BAMBOO // SCRUM TEAM MEMBER //",
                             "link": "https://www.bankia.es/"
                         },
                         {
                             "icon": "icons/works-cc.png",
                             "title": "JAVASCRIPT UI DEVELOPER__SCRUM MASTER: C&C TECHNOLOGY (TKH GROUP)__LESZNO (POLAND)__2015/16",
-                            "text": "// DESIGN, DEVELOPMENT, INTEGRATION AND TESTING OF POLYMER WEB COMPONENTS FOR A GUI CATALOG // SCRUM MASTER: RETROSPECTIVE, REVIEW AND PLANNING // MAINTENANCE OF MOBILE APPLICATIONS // CREATION OF GULP TASKS FOR BUILDING PROCESS // VERSION CONTROL WITH GITLAB // CONTINUOUS INTEGRATION WITH JENKINS // ",
+                            "text": "DESIGN, DEVELOPMENT, INTEGRATION AND TESTING OF POLYMER WEB COMPONENTS FOR A GUI CATALOG // SCRUM MASTER: RETROSPECTIVE, REVIEW AND PLANNING // MAINTENANCE OF MOBILE APPLICATIONS // CREATION OF GULP TASKS FOR BUILDING PROCESS // VERSION CONTROL WITH GITLAB // CONTINUOUS INTEGRATION WITH JENKINS // ",
                             "link": "https://www.cctechnology.pl/"
                             },
                             {
                             "icon": "icons/works-gopopup.png",
                             "title": "FRONT-END DEVELOPER: GO-POPUP - BERLIN (GERMANY)__2015",
-                            "text": "// RESPONSIVE WEB DESIGN WITH LESS AND BOOTSTRAP // MAINTENANCE OF BACKBONE JS ON A PLAY FRAMEWORK // CONFIGURATION OF SCALA BUILD TOOL // DESIGN AND INTEGRATION OF PHP APPLICATION TO MIGRATE DATA // CUSTOM GOOGLE MAPS MARKERS // ADVANCED DEVELOPMENT OF WORDPRESS THEMES // VERSION CONTROL WITH GITHUB //  ",
+                            "text": "RESPONSIVE WEB DESIGN WITH LESS AND BOOTSTRAP // MAINTENANCE OF BACKBONE JS ON A PLAY FRAMEWORK // CONFIGURATION OF SCALA BUILD TOOL // DESIGN AND INTEGRATION OF PHP APPLICATION TO MIGRATE DATA // CUSTOM GOOGLE MAPS MARKERS // ADVANCED DEVELOPMENT OF WORDPRESS THEMES // VERSION CONTROL WITH GITHUB //  ",
                             "link": "https://www.gopopup.com/en"
                             },
                             {
                             "icon": "icons/works-qsdm.png",
                             "title": "UI/UX DESIGNER AND FRONT-END DEVELOPER: QUESERADEMI (STARTUP)__MADRID (SPAIN)__2012/15",
-                            "text": "// MOCKUPS, WEB INTERFACE SKETCHES, WIREFRAMES AND STORYBOARDS // INTERACTIVE PROTOTYPES WITH FLASH  // PRODUCTION OF PROMOTIONAL VIDEOS                           // IMPLEMENTATION OF HIGHCHARTS AND TWITTER TYPEAHEAD // DEVELOPMENT OF PHP-EXCEL DATA CONVERTER // JQUERY MOBILE DEVELOPMENT // RESPONSIVE DESIGN  // GOOGLE ANALYTICS TRACKING // INTEGRATION OF WORDPRESS BLOG // MANAGEMENT //",
+                            "text": "MOCKUPS, WEB INTERFACE SKETCHES, WIREFRAMES AND STORYBOARDS // INTERACTIVE PROTOTYPES WITH FLASH  // PRODUCTION OF PROMOTIONAL VIDEOS                           // IMPLEMENTATION OF HIGHCHARTS AND TWITTER TYPEAHEAD // DEVELOPMENT OF PHP-EXCEL DATA CONVERTER // JQUERY MOBILE DEVELOPMENT // RESPONSIVE DESIGN  // GOOGLE ANALYTICS TRACKING // INTEGRATION OF WORDPRESS BLOG // MANAGEMENT //",
                             "link": "https://queserademi.com/"
-                            },
-                            {
-                            "icon": "icons/works-web.png",
-                            "title": "WEB APPLICATION DEVELOPER: IES JOSÉ PLANES__MURCIA (SPAIN)__2013/15",
-                            "text": "// JAVA INTERNSHIP MANAGEMENT SYSTEM: { ER-MODEL DOCUMENTS, JBDC APPLICATIONS } // WEB APP PROJECTS: { PHP MVC APPLICATIONS, THEMATIC WEB TUNCC, CHAT & VOTING SURVEY WITH AJAX, MINESWEEPER JQUERY GAME, SYMFONY BUNDLE PROJECT, PORTFOLIO APPLICATION, ADVANCED WORDPRESS - REMODELAHOME, RECIPE LIST WITH ANGULARJS, CLIENT-EMAIL BOX WITH BACKBONE-MARIONETTE } //",
-                            "link": "https://manueldelpozo.github.io/"
                             },
                             {
                             "icon": "icons/works-au10etdeco.png",
                             "title": "FLASH WEB DESIGNER: AU 10 ET DÉCO__CLERMONT FERRAND (FRANCE)__2011",
-                            "text": "// WEB PROJECT MANAGEMENT // USER INTERACTION DESIGN // CREATION OF FLASH ANIMATIONS // MOCKUPS AND PAGE LAYOUTS // DREAMWEAVER AND FLASH DESIGN //",
+                            "text": "WEB PROJECT MANAGEMENT // USER INTERACTION DESIGN // CREATION OF FLASH ANIMATIONS // MOCKUPS AND PAGE LAYOUTS // DREAMWEAVER AND FLASH DESIGN //",
                             "link": "http://www.au10etdeco.com/"
                             }
                     ]
@@ -65,38 +59,56 @@
                     "body": [
                         {
                             "icon": "icons/tech-frontend.png",
-                            "title": "FRONT-END",
-                            "text": "// JAVASCRIPT: { ES6, POLYMER, ANGULAR JS, BACKBONE-MARIONETTE, JQUERY } // CSS3: { SASS, LESS, BOOTSTRAP } // HTML5: { JADE } //",
+                            "title": "JAVASCRIPT",
+                            "text": "// ES6 // ANGULAR 2+ // REACT + REDUX // POLYMER 2+ // VUE // MATERIAL UI // TYPESCRIPT // LODASH // JQUERY // ",
+                            "link": ""
+                        },
+                        {
+                            "icon": "icons/tech-frontend.png",
+                            "title": "CSS3",
+                            "text": "// SASS // LESS // BOOTSTRAP 4 // FLEXBOX // BEM //",
+                            "link": ""
+                        },
+                        {
+                            "icon": "icons/tech-frontend.png",
+                            "title": "CMS",
+                            "text": "// WORDPRESS ADVANCED THEMING // MAGENTO 2 //",
                             "link": ""
                         },
                         {
                             "icon": "icons/tech-node.png",
-                            "title": "BUILDING & TESTING",
-                            "text": "// NODE JS // NPM // BOWER // GULP // GRUNT // JENKINS // PICARD // ARTIFACTORY // NOLIO // BAMBOO // WCT // MOCHA JS // CHAI JS // SAUCELAB //",
+                            "title": "UNIT-TEST",
+                            "text": "// JUNIT // WCT // MOCHA JS // CHAI JS // SAUCELAB //",
+                            "link": ""
+                        },
+                        {
+                            "icon": "icons/tech-node.png",
+                            "title": "BUILD & DEPLOYMENT",
+                            "text": "// NODE JS // NPM // BOWER // WEBPACK // GULP // JENKINS // ARTIFACTORY // NOLIO // BAMBOO //",
                             "link": ""
                         },
                         {
                             "icon": "icons/tech-scrum.png",
-                            "title": "TEAM WORKFLOW",
-                            "text": " // GIT: { GITLAB, GITHUB, STASH + SOURCETREE, TORTOISE } // AGILE: { YOU-TRACK, JIRA, CONFLUENCE, SNOW, SCRUMBLR, SLACK } //",
+                            "title": "WORKFLOW",
+                            "text": "// GIT: { GITLAB, GITHUB, STASH + SOURCETREE, TORTOISE } // AGILE: { YOU-TRACK, JIRA, CONFLUENCE, MATTERMOST } // ",
                             "link": ""
                         },
                         {
                             "icon": "icons/tech-backend.png",
                             "title": "BACK-END",
-                            "text": "// JAVA: { SPRING + MAVEN } // PHP: { SYMFONY 2.0 + DOCTRINE } // PYTHON // SHELL: { SH, BASH } //  XML: { XSL, XSD, XPATH } // MYSQL //",
+                            "text": "// JAVA: { SPRING + MAVEN } // PHP: { SYMFONY 2.0 + DOCTRINE } // PYTHON // MYSQL // GRAPHQL //",
                             "link": ""
                         },
                         {
                             "icon": "icons/tech-graphic.png",
-                            "title": "GAPHIC DESIGN",
-                            "text": "// PHOTOSHOP // DREAMWEAVER // EDGE ANIMATE // AFTER-EFFECTS // FIREWORKS // FLASH PROFESSIONAL // IN-DESIGN // ILLUSTRATOR //",
+                            "title": "IDE",
+                            "text": "// WEBSTORM // PHPSTORM // INTELLIJ // SUBLIME // VISUAL STUDIO CODE // NETBEANS // SPRING TOOL SUITE //",
                             "link": ""
                         },
                         {
-                            "icon": "icons/tech-arch.png",
-                            "title": "ARCHITECTURAL DESIGN",
-                            "text": "// REVIT // AUTOCAD // 3DS-MAX+VRAY // SKETCHUP // ARCHICAD // VECTORWORKS // CYPECAD //",
+                            "icon": "icons/tech-graphic.png",
+                            "title": "UI/UX",
+                            "text": "// PHOTOSHOP // DREAMWEAVER // EDGE ANIMATE // AFTER-EFFECTS // FLASH PRO // ILLUSTRATOR // INVISION //",
                             "link": ""
                         }
                     ]
